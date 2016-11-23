@@ -1,7 +1,6 @@
 /node_modules
 /public/storage
 /storage/*.key
-/resources/assets/js/vue2-tinymce
 /vendor
 /.idea
 Homestead.json

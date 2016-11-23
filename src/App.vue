@@ -9,10 +9,12 @@
         <router-link class="nav-link" to="/second">Second</router-link>
       </li>
       <span class="navbar-text float-xs-right text-muted">
-        <span>123</span>
-        <span>123</span>
-        <span>123</span>
-        <span>123</span>
+        <a href="#">
+            <i class="fa fa-github fa-lg with-icon" aria-hidden="true"></i><span class="with-icon">Github</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-circle-o-notch with-icon" aria-hidden="true"></i><span class="with-icon">NPM</span>
+        </a>
       </span>
     </ul>
   </nav>
@@ -70,6 +72,13 @@ export default {
 }
 .plus{
     margin-left: 15px;
+}
+.with-icon{
+    margin-left: 5px;
+}
+.float-xs-right > a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none !important;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

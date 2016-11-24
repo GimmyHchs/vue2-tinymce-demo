@@ -25,19 +25,17 @@
     <div class="container">
         <img src="./assets/logomix.png">
     </div>
-    <tinymce></tinymce>
+    <vue2-tinymce></vue2-tinymce>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 import StoreInfo from './components/StoreInfo.vue'
-import TinyMCE from './../vue2-tinymce/src/index.js'
 
 export default {
   name: 'app',
   components:{
-    'tinymce':TinyMCE,
     'store-info':StoreInfo,
   },
   computed:{

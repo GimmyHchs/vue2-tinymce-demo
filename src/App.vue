@@ -6,7 +6,7 @@
           <router-link class="nav-link" to="/first">Vue2-tinymce</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="/second">Second</router-link>
+          <router-link class="nav-link" to="/second">Second</router-link>
       </li>
       <span class="navbar-text float-xs-right text-muted">
         <a href="#">
@@ -25,16 +25,19 @@
     <div class="container">
         <img src="./assets/logomix.png">
     </div>
+    <tinymce></tinymce>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import StoreInfo from './components/StoreInfo.vue';
+import StoreInfo from './components/StoreInfo.vue'
+import TinyMCE from './../vue2-tinymce/src/index.js'
 
 export default {
   name: 'app',
   components:{
+    'tinymce':TinyMCE,
     'store-info':StoreInfo,
   },
   computed:{
